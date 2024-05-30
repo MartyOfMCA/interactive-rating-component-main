@@ -62,12 +62,15 @@ body {
   align-items: center;
 }
 
+.main {
+  margin-block-start: auto;
+}
+
 .container {
   flex-direction: column;
   width: 400px;
   max-width: 80%;
   background-color: hsl(213, 19%, 18%);
-  margin-block-start: auto;
   margin-inline: auto;
   padding-block: 3rem;
   padding-inline: 1.5rem;
