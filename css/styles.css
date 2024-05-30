@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.overpass-regular {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overpass-bold {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heading {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block-start: auto;
+  margin-block-end: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.main-axis-center {
+  justify-content: center;
+}
+
+.cross-axis-center {
+  align-items: center;
+}
+
+.container {
+  flex-direction: column;
+  width: 400px;
+  max-width: 80%;
+  background-color: hsl(213, 19%, 18%);
+  margin-block-start: auto;
+  margin-inline: auto;
+  padding-block: 3rem;
+  padding-inline: 1.5rem;
+  border-radius: 1em;
+}
+
+.rating-icon {
+  align-self: flex-start;
+  border-radius: 100%;
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(212, 12%, 22%);
+}
+
+.ratings {
+  justify-content: space-between;
+}
+
+.rating {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: none;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(212, 12%, 22%);
+}
+
+.rating:hover {
+  color: hsl(0, 100%, 0%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rating:focus {
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  padding-block: 1rem;
+  border-radius: 2em;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.hide {
+  display: none;
+}
+
+.appreciation-label {
+  background-color: hsl(212, 12%, 22%);
+  color: hsl(25, 97%, 53%);
+  padding-inline: 1rem;
+  padding-block: 0.4rem;
+  border-radius: 20px;
+}

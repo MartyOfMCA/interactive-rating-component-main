@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Frontend Mentor | Interactive rating component</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  How did we do?
+<body class="overpass-regular">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  <section class="container flex question">
+    <span class="flex rating-icon main-axis-center cross-axis-center">
+      <img src="./images/icon-star.svg" alt="Icon for ratings">
+    </span>
+    <h1 class="heading">How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <div class="flex ratings">
+      <button class="rating flex main-axis-center cross-axis-center button">1</button>
+      <button class="rating flex main-axis-center cross-axis-center button">2</button>
+      <button class="rating flex main-axis-center cross-axis-center button">3</button>
+      <button class="rating flex main-axis-center cross-axis-center button">4</button>
+      <button class="rating flex main-axis-center cross-axis-center button">5</button>
+    </div>
+    <button class="button overpass-bold submit">Submit</button>
+  </section>
 
-  1 2 3 4 5
+  <section class="container hide appreciation">
+    <div class="flex flex-col cross-axis-center">
+      <img src="./images/illustration-thank-you.svg" alt="Thank you for your rating">
+      <p class="appreciation-label">You selected <span class="selected-rating"></span> out of 5</p>
+    </div>
+    <div class="flex flex-col main-axis-center cross-axis-center">
+      <h1 class="heading">Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+  </section>
 
-  Submit
-
-  You selected out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor (Open official site)</a>. 
-    Coded by <a href="https://github.com/MartyOfMCA" target="_blank">Martin (Open GitHub profile)</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor (Open official site)</a>.
+    Coded by
+    <a href="https://github.com/MartyOfMCA" target="_blank">Martin (Open GitHub profile)</a>.
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
