@@ -38,7 +38,11 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(25, 97%, 53%);
+}
+
+.attribution a:hover {
+  color: hsl(0, 0%, 100%);
 }
 
 .flex {
@@ -88,7 +92,7 @@ body {
   height: 3rem;
   border-radius: 100%;
   border: none;
-  color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
   background-color: hsl(212, 12%, 22%);
 }
 
